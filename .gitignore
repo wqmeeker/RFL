@@ -1,0 +1,13 @@
+*.tex~
+*.R~
+*.lnk
+*.dll
+*.Rout
+*.o
+*~
+*.ini
+*.pdf
+*.rds
+*.Rd
+#*#
+
