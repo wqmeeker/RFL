@@ -10,4 +10,4 @@
 *.rds
 *.Rd
 #*#
-
+!Papers/*.pdf
