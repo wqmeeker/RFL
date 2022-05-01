@@ -21,14 +21,14 @@ tran_response = as.matrix(log(LaminatePanel[, "Thousands.of.Cycles"])),
 cencode = ifelse(as.character(LaminatePanel[, "Censoring.Indicator"])=="Failed", 1, 2),
 weights = rep(1.0, length=nrow(LaminatePanel)),
 stress = LaminatePanel[, "Stress..MPa."],
-log_s0_minus_gamma0 = 0,
+log_s0_minus_gamma0 = log(540-250),
 numdist = 4,
-prior_codes = c(1,1,1,1,1),
+prior_codes = c(0,0,1,1,1),
 beta0star_prior_parameters = c(29.,  2.329, 0),
 beta1_prior_parameters = c(-4.75, 0.0970, 0),
-log_sigma_error_prior_parameters = c(-0.948, 0.099, 0),
-mu_log_gamma_prior_parameters = c(1.70, 0.02828445, 0),
-log_sigma_log_gamma_prior_parameters = c(-4.71, 0.312, 0))
+log_sigma_error_prior_parameters = c(-0.948, 0.5, 0),
+mu_log_gamma_prior_parameters = c(5.3, 0.9, 0),
+log_sigma_log_gamma_prior_parameters = c(-4.71, 0.412, 0))
  
 ###
 ### compile the Stan RFL model
