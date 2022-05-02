@@ -27,7 +27,7 @@ prior_codes = c(0,0,1,1,1),
 beta0star_prior_parameters = c(29.,  2.329, 0),
 beta1_prior_parameters = c(-4.75, 0.0970, 0),
 log_sigma_error_prior_parameters = c(-0.948, 0.5, 0),
-mu_log_gamma_prior_parameters = c(5.3, 0.9, 0),
+mu_log_gamma_prior_parameters = c(7.3, 2.0, 0),
 log_sigma_log_gamma_prior_parameters = c(-4.71, 0.412, 0))
  
 ###
