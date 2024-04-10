@@ -61,3 +61,4 @@ print(LaminatePanelRFL.fit, pars=interesting.pars, digits=3)
 pairs(LaminatePanelRFL.fit, pars=interesting.pars)
 traceplot(LaminatePanelRFL.fit, pars=interesting.pars)
 
+save(LaminatePanelRFL.fit, file="LaminatePanelRFL.fit.Rsave")
